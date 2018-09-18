@@ -44,6 +44,9 @@
                 - revoke all on db1.* from 'wzy'@"%";
             -3 取消来自远程服务器的wzy用户所有数据库的所有表权限
                 - revoke all privileges on *.* from 'wzy'@'%';
+        -4 查看创建用户状态
+                - use mysql
+                - select host,user from mysql.user;
     4- MySQL备份命令行操作
         1- 备份
             -1 备份：数据库表结构+数据
